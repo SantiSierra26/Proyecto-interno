@@ -2,7 +2,7 @@ package co.edu.unbosque.model;
 
 public class Torneos {
 	
-	private Partida partida[];
+	private Partidas partida[];
 	private double ganador[];
 	
 	public Torneos() {
