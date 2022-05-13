@@ -10,7 +10,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Panel_Principal extends JPanel{
-	
 
 	private JButton jugadores;
 	private JButton juegos;
@@ -18,8 +17,10 @@ public class Panel_Principal extends JPanel{
 	private JButton torneos;
 	
 	public Panel_Principal() {
+		
 		setLayout(new GridLayout(2, 2));
 		funcionar();
+		
 	}
 	
 	public void funcionar() {
@@ -43,7 +44,6 @@ public class Panel_Principal extends JPanel{
 	}
 
 	
-
 	public JButton getJugadores() {
 		return jugadores;
 	}

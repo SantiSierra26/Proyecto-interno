@@ -15,9 +15,10 @@ public class Ventana_Principal extends JFrame{
 	public Ventana_Principal() {
 		
 		setTitle("Sistema de Información de Juegos de Mesa");
-		setPreferredSize(new Dimension(460, 340));
+		setPreferredSize(new Dimension(450, 200));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		getContentPane().setLayout(new GridLayout(2,2));
+		getContentPane().setLayout(new BorderLayout());
+		//getContentPane().setLayout(new GridLayout(2,2));
 		pack();
 		setResizable(false);// Establece si se puede cambiar el tamaño de la ventana.
 		setLocationRelativeTo(null);//Coloca la ventana al centro de la pantalla.
@@ -32,11 +33,10 @@ public class Ventana_Principal extends JFrame{
 		getContentPane().add(Ipan, BorderLayout.CENTER);
 		
 		panelp = new Panel_Principal();
-		panelp.setBounds(50, 50, 300, 100);
+		panelp.setBounds(67, 27, 300, 100);
 		panelp.setOpaque(false);
 		
-		
-		Ipan.add(panelp,1,0);
+		Ipan.add(panelp);
 	
 	}
 
