@@ -10,6 +10,7 @@ import javax.swing.JPanel;
 
 public class Panel_Juegos extends JPanel{
 
+	private static final long serialVersionUID = 1L;
 	private JLabel nada;
 	private JButton atras;
 

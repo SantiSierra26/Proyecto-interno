@@ -1,16 +1,13 @@
 package co.edu.unbosque.view;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Font;
 import java.awt.GridLayout;
-
 import javax.swing.JButton;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class Panel_Principal extends JPanel{
 
+
+	private static final long serialVersionUID = 1L;
 	private JButton jugadores;
 	private JButton juegos;
 	private JButton partidas;
@@ -18,7 +15,7 @@ public class Panel_Principal extends JPanel{
 	
 	public Panel_Principal() {
 		
-		setLayout(new GridLayout(2, 2));
+		setLayout(new GridLayout(2,2,27,10));
 		funcionar();
 		
 	}

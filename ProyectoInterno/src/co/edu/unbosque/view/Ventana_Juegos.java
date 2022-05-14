@@ -5,6 +5,8 @@ import java.awt.Color;
 
 import javax.swing.JFrame;
 
+import co.edu.unbosque.controller.Controller;
+
 public class Ventana_Juegos extends JFrame{
 	
 	private Panel_Juegos paneljuegos;
@@ -18,7 +20,7 @@ public class Ventana_Juegos extends JFrame{
 		getContentPane().setLayout(new BorderLayout());
 		setResizable(false);
 		setLocationRelativeTo(null);
-		setVisible(false);
+		setVisible(false);	
 		funcionar();
 	}
 	

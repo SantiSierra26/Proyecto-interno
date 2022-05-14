@@ -5,6 +5,8 @@ import java.awt.Color;
 
 import javax.swing.JFrame;
 
+import co.edu.unbosque.controller.Controller;
+
 public class Ventana_Partidas extends JFrame{
 	
 	private Panel_Partidas panelpartidas;

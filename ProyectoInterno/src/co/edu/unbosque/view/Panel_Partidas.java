@@ -14,8 +14,12 @@ public class Panel_Partidas extends JPanel{
 	private JButton atras;
 
 	public Panel_Partidas() {
+		
 		setLayout(new BorderLayout(1,2));
 		setVisible(true);
+		
+		
+		
 		funcionar();
 	}
 
