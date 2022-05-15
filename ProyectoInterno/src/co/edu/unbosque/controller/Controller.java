@@ -18,6 +18,7 @@ public class Controller implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		
 		String comando = e.getActionCommand();
+		
 		if(comando.equals("jugadores")) {
 			
 			gui.getPrincipal().setVisible(false);

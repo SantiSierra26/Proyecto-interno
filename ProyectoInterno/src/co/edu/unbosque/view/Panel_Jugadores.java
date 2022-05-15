@@ -1,44 +1,53 @@
 package co.edu.unbosque.view;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Font;
-
+import java.awt.GridLayout;
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.TitledBorder;
 
 public class Panel_Jugadores extends JPanel{
 
-	private JLabel nada;
+	private static final long serialVersionUID = 1L;
+	private JLabel enunciado;
+	private JTextField txt;
+	private JButton butEscribir;
+	private JButton butLeer;
 	private JButton atras;
 
 	public Panel_Jugadores() {
-		setLayout(new BorderLayout(1,1));
-		setVisible(true);
-		funcionar();
-	}
-
-	public void funcionar() {
-
-		nada = new JLabel("Nada Por el Momento");
-		nada.setForeground(Color.RED);
-		Font lyric = new Font("arial", Font.ITALIC, 20);
-		nada.setFont(lyric);
-		add(nada);
 		
+		setLayout(new GridLayout(1,1));		
 		atras = new JButton("Volver al menu principal");
 		atras.setActionCommand("atrasjugadores");
 		add(atras);
-
+	}
+	
+	public JTextField getTxt() {
+		return txt;
 	}
 
-	public JLabel getNada() {
-		return nada;
+	public void setTxt(JTextField txt) {
+		this.txt = txt;
 	}
 
-	public void setNada(JLabel nada) {
-		this.nada = nada;
+	public JButton getButEscribir() {
+		return butEscribir;
+	}
+
+	public void setButEscribir(JButton butEscribir) {
+		this.butEscribir = butEscribir;
+	}
+
+	public JButton getButLeer() {
+		return butLeer;
+	}
+
+	public void setButLeer(JButton butLeer) {
+		this.butLeer = butLeer;
 	}
 
 	public JButton getAtras() {
